@@ -1,0 +1,4 @@
+train: ../../../dataset/mainDataset/images/train
+val: ../../../dataset/mainDataset/images/val
+nc: 1
+names: ['face']

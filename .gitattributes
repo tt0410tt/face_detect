@@ -1,0 +1,6 @@
+# 모든 텍스트 파일에 대해 LF 줄 끝을 강제
+* text=auto
+*.html text eol=lf
+*.py text eol=lfg
+*.yaml text eol=lf
+*.py text eol=lf
