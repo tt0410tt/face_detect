@@ -3,7 +3,21 @@ import numpy as np
 from ultralytics import YOLO
 from PIL import Image
 
-def apply_mosaic(image, x1, y1, x2, y2, mosaic_factor=50):
+def apply_mosaic(image: np.ndarray, x1: int, y1: int, x2: int, y2: int, mosaic_factor: int = 50) -> np.ndarray:
+    """
+    지정된 영역에 모자이크를 적용합니다.
+
+    Args:
+        image (np.ndarray): 원본 이미지 배열
+        x1 (int): 모자이크를 적용할 영역의 왼쪽 상단 x 좌표
+        y1 (int): 모자이크를 적용할 영역의 왼쪽 상단 y 좌표
+        x2 (int): 모자이크를 적용할 영역의 오른쪽 하단 x 좌표
+        y2 (int): 모자이크를 적용할 영역의 오른쪽 하단 y 좌표
+        mosaic_factor (int): 모자이크 강도 (기본값: 50)
+
+    Returns:
+        np.ndarray: 모자이크가 적용된 이미지 배열
+    """
     # ROI 영역 설정
     roi = image[y1:y2, x1:x2]
 
@@ -22,7 +36,19 @@ def apply_mosaic(image, x1, y1, x2, y2, mosaic_factor=50):
     image[y1:y2, x1:x2] = roi
     return image
 
-def mosaic_ellipse(file_name, mosaic_factor=50):
+def mosaic_ellipse(file_name: str, mosaic_factor: int = 50) -> None:
+    """
+    비디오에서 얼굴을 감지하고 얼굴 영역을 모자이크 처리한 후,
+    처리된 비디오를 저장합니다.
+
+    Args:
+        file_name (str): 처리할 비디오 파일의 이름
+        mosaic_factor (int): 모자이크 강도 (기본값: 50)
+
+    Returns:
+        'face_detect/code/server/static/download/mosaic_ellipse_' + file_name
+        에 파일이 저장된다.
+    """
     # 모델 로드
     model_path = 'face_detect/model/training/train_face.pt'
     model = YOLO(model_path)

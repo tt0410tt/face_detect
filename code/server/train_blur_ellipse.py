@@ -4,7 +4,17 @@ from ultralytics import YOLO
 from PIL import Image
 import matplotlib.pyplot as plt
 
-def train_blur_ellipse(file_name):
+def train_blur_ellipse(file_name: str) -> None:
+    """
+    비디오에서 얼굴을 감지하고 타원형 마스크를 사용하여 얼굴 영역을 블러 처리한 후,
+    처리된 비디오를 저장합니다.
+
+    Args:
+        file_name (str): 처리할 비디오 파일의 이름
+
+    Returns:
+        code/server/static/download/blur_ellipse_/"filename.np4"
+    """
     # 모델 로드
     model_path = 'face_detect/model/training/train_face.pt'
     model = YOLO(model_path)
