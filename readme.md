@@ -40,10 +40,10 @@
     1. git 클론할 폴더를 만든다.  
     2. 터미널에서 그 위치를 찾아간다.  
     3. 터미널에서  
-    git clone https://github.com/tt0410tt/privacy_face_solution.git  
+    git clone https://github.com/tt0410tt/face_detect.git  
     를 입력한다.  
     이후 아래 커멘드를 순서대로 터미널에 입력한다.
-    4. cd privacy_face_solution  
+    4. cd face_detect  
     5. docker build -t [프로젝트이름] .
     6. docker run -p 5000:50000 [프로젝트이름]  
 
