@@ -27,8 +27,4 @@ COPY . .
 RUN rm -rf dataset result yolov8_env
 
 # 8. 서버 실행 명령
-<<<<<<< HEAD
 CMD ["python", "code/server/web.py", "--host=0.0.0.0"]
-=======
-CMD ["python", "code/server/web.py", "--host=0.0.0.0"]
->>>>>>> 386ca96beebdbc8493e0587e78d036a9a9467e34
