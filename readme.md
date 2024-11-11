@@ -2,13 +2,12 @@
 
 # 목차
 1. 프로젝트 개요
-2. 프로젝트 요청사항
-3. 기능
-4. 서버 조건 및 설치 방법
-5. 사용법
-6. 기술 스택
-7. 라이선스
-8. 문의
+2. 기능
+3. 서버 조건 및 설치 방법
+4. 사용법
+5. 기술 스택
+6. 라이선스
+7. 문의
 
 # 1. 프로젝트 개요
 - Python과 딥러닝 기술을 활용한 영상 안면 비식별화 웹 애플리케이션입니다.  
@@ -49,7 +48,18 @@
 
 
 # 4. 사용법
-
+- git, docker 사용 기준(권장)
+    1. 크롬(권장)을 켜서 주소창에 http://localhost:5000/ 입력한다.
+    2. 메인화면에서 파일선택을 누른다.
+    ![alt text](readme_imeges/n1.png)
+    3. 모달창이 뜨면 안면 비식별화가 필요한 mp4 파일을 선택한다.
+    4. 제출을 누른다.
+    5. 화면에서 4가지 비식별화 솔루션 중 한가지를 선택한다.
+    ![alt text](readme_imeges/n2.png)
+    6. 비식별화를 진행하는동안 대기한다.
+    7. 다운로드를받는다.
+    ![alt text](readme_imeges/n3.png)
+    
 
 # 5. 기술 스택
 - 프론트엔드: HTML, CSS, JavaScript
@@ -59,7 +69,15 @@
 # 6. 라이선스
 라이선스
 이 프로젝트는 MIT 라이선스를 따릅니다. 
-라이선스 url : 
+The MIT License (MIT)
+
+Copyright (c) <year> <copyright holders>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # 7. 문의
 이메일: tt0410tt@naver.com  
