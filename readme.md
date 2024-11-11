@@ -54,9 +54,7 @@
 # 5. 기술 스택
 - 프론트엔드: HTML, CSS, JavaScript
 - 백엔드: Python, Flask
-- 머신러닝 라이브러리
-- 기타: NumPy, Pillow
-
+- 딥러닝 라이브러리
 
 # 6. 라이선스
 라이선스

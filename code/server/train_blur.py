@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from ultralytics import YOLO
 from PIL import Image
-
+from pathlib import Path
 def tarin_blur(file_name : str) -> None:
     """
     비디오에서 얼굴을 감지하고 직사각형 마스크를 사용하여 얼굴 영역을 블러 처리한 후,
@@ -14,16 +14,19 @@ def tarin_blur(file_name : str) -> None:
     Returns:
         code/server/static/download/blur/"filename.np4"
     """
+    current_file = Path(__file__).resolve()
+    main_folder = current_file.parent.parent.parent
     # 모델 로드
-    model_path = 'face_detect/model/training/train_face.pt'
+    model_path = main_folder / "model" / "training" / "train_face.pt"
     model = YOLO(model_path)
 
     # 비디오 파일 로드
-    video_path = 'face_detect/code/server/static/upload/'+file_name
+    video_path = main_folder / "code" / "server" / "static" / "upload" / file_name
     cap = cv2.VideoCapture(video_path)
 
     # 비디오 작성기 설정
-    output_path = 'face_detect/code/server/static/download/blur_'+file_name
+    file_name1="blur_"+file_name
+    output_path = main_folder / "code" / "server" / "static" / "download"/ file_name1
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # 코덱 설정
     fps = int(cap.get(cv2.CAP_PROP_FPS))
     width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
