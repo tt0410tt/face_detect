@@ -44,8 +44,8 @@
     를 입력한다.  
     이후 아래 커멘드를 순서대로 터미널에 입력한다.
     4. cd face_detect  
-    5. docker build -t [프로젝트이름] .
-    6. docker run -p 5000:50000 [프로젝트이름]  
+    5. docker build -t [프로젝트이름] .  
+    6. docker run -p 5000:5000 [프로젝트이름]  
 
 
 # 4. 사용법
