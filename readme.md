@@ -48,17 +48,17 @@
 
 
 # 4. 사용법
-- git, docker 사용 기준(권장)
-    1. 크롬(권장)을 켜서 주소창에 http://localhost:5000/ 입력한다.
-    2. 메인화면에서 파일선택을 누른다.
-    ![alt text](readme_imeges/n1.png)
-    3. 모달창이 뜨면 안면 비식별화가 필요한 mp4 파일을 선택한다.
-    4. 제출을 누른다.
-    5. 화면에서 4가지 비식별화 솔루션 중 한가지를 선택한다.
-    ![alt text](readme_imeges/n2.png)
-    6. 비식별화를 진행하는동안 대기한다.
-    7. 다운로드를받는다.
-    ![alt text](readme_imeges/n3.png)
+- git, docker 사용 기준(권장)  
+    1. 크롬(권장)을 켜서 주소창에 http://localhost:5000/ 입력한다.  
+    2. 메인화면에서 파일선택을 누른다.  
+    ![alt text](readme_images/n1.png)  
+    3. 모달창이 뜨면 안면 비식별화가 필요한 mp4 파일을 선택한다.  
+    4. 제출을 누른다.  
+    5. 화면에서 4가지 비식별화 솔루션 중 한가지를 선택한다.  
+    ![alt text](readme_images/n2.png)  
+    6. 비식별화를 진행하는동안 대기한다.  
+    7. 다운로드를받는다.  
+    ![alt text](readme_images/n3.png)  
     
 
 # 5. 기술 스택
