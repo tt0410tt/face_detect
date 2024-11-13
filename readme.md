@@ -46,32 +46,44 @@
     5. docker build -t [프로젝트이름] .  
     6. docker run -p 5000:5000 [프로젝트이름]  
 
+- git, conda 사용 기준(python 3.9)
+    1. git 클론할 폴더를 만든다.
+    2. 터미널에서 그 위치를 찾아간다.
+    3. git clone https://github.com/tt0410tt/face_detect.git  
+    를 입력한다.  
+    이후 아래 커멘드를 순서대로 터미널에 입력한다.  
+    4. cd face_detect  
+    5. conda create -n [콘다환경이름] python=3.9 -y  
+    6. conda activate [콘다환경이름]  
+    7. pip install -r requirements.txt  
+    8. python code/server/web.py  
 
-# 4. 사용법
-- git, docker 사용 기준(권장)  
-    1. 크롬(권장)을 켜서 주소창에 http://localhost:5000/ 입력한다.  
-    2. 메인화면에서 파일선택을 누른다.  
-    ![alt text](readme_images/n1.png)  
-    3. 모달창이 뜨면 안면 비식별화가 필요한 mp4 파일을 선택한다.  
-    4. 제출을 누른다.  
-    5. 화면에서 4가지 비식별화 솔루션 중 한가지를 선택한다.  
-    ![alt text](readme_images/n2.png)  
-    6. 비식별화를 진행하는동안 대기한다.  
-    7. 다운로드를받는다.  
-    ![alt text](readme_images/n3.png)  
     
 
+# 4. 사용법
+1. 크롬(권장)을 켜서 주소창에 http://localhost:5000/ 입력한다.  
+2. 메인화면에서 파일선택을 누른다.  
+![alt text](readme_images/n1.png)  
+3. 모달창이 뜨면 안면 비식별화가 필요한 mp4 파일을 선택한다.  
+4. 제출을 누른다.  
+5. 화면에서 4가지 비식별화 솔루션 중 한가지를 선택한다.  
+![alt text](readme_images/n2.png)  
+6. 비식별화를 진행하는동안 대기한다.  
+7. 다운로드를받는다.  
+![alt text](readme_images/n3.png)  
+
+
 # 5. 기술 스택
-- 프론트엔드: HTML, CSS, JavaScript
-- 백엔드: Python, Flask
-- 딥러닝 라이브러리
+- 프론트엔드: HTML, JavaScript  
+- 백엔드: Python, Flask  
+- 딥러닝 라이브러리  
 
 # 6. 라이선스
-라이선스
-이 프로젝트는 MIT 라이선스를 따릅니다. 
-The MIT License (MIT)
+라이선스  
+이 프로젝트는 MIT 라이선스를 따릅니다.   
+The MIT License (MIT)  
 
-Copyright (c) <year> <copyright holders>
+Copyright (c) <year> <copyright holders>  
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -81,4 +93,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 # 7. 문의
 이메일: tt0410tt@naver.com  
-GitHub: tt0410tt
+GitHub: tt0410tt  
